@@ -229,47 +229,13 @@
     }
     .btn-outline:hover { background: var(--navy); color: var(--white); transform: translateY(-2px); }
 
-    /* photo placeholder */
-    .hero-photo {
-      width: 280px; height: 340px;
-      border-radius: 24px;
-      background: linear-gradient(145deg, var(--gray2), #ccd9e8);
-      display: flex; flex-direction: column;
-      align-items: center; justify-content: center;
-      gap: .75rem;
-      position: relative;
-      box-shadow: var(--shadow-lg);
-      overflow: hidden;
-      flex-shrink: 0;
-    }
+  <img src="foto.jpg" alt="Eksa" style="width:100%;height:100%;object-fit:cover;border-radius:22px">
     .hero-photo::before {
       content: '';
       position: absolute; inset: 0;
       background: linear-gradient(135deg, rgba(14,165,160,.08), rgba(15,45,82,.05));
     }
-    .hero-photo-icon {
-      width: 72px; height: 72px;
-      background: rgba(14,165,160,.15);
-      border-radius: 50%;
-      display: flex; align-items: center; justify-content: center;
-      font-size: 2rem;
-      position: relative; z-index: 1;
-    }
-    .hero-photo-label {
-      font-size: .78rem; color: var(--muted);
-      font-weight: 500; text-align: center;
-      position: relative; z-index: 1;
-    }
-    .hero-photo-ring {
-      position: absolute; inset: -2px;
-      border-radius: 25px;
-      border: 2px solid transparent;
-      background: linear-gradient(135deg, var(--teal), var(--navy)) border-box;
-      -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
-      -webkit-mask-composite: destination-out;
-      mask-composite: exclude;
-    }
-
+    
     .hero-stats {
       display: flex; gap: 2rem;
       margin-top: 3rem;
